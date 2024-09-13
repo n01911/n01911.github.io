@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tiêu Đề Chính -->
+        <header class="main-header">
+            <h1>Ứng Dụng Quản Lý Công Việc</h1>
+        </header>
+        
+        <!-- Tiêu Đề Phụ -->
+        <div class="sub-header">
+            <h2>Danh Sách Công Việc</h2>
+        </div>
+        
+        <!-- Nhập Công Việc -->
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Thêm công việc...">
+            <select id="category-select">
+                <option value="">Chọn danh mục</option>
+                <option value="work">Công việc</option>
+                <option value="personal">Cá nhân</option>
+                <option value="shopping">Mua sắm</option>
+            </select>
+            <button id="add-btn">Thêm</button>
+        </div>
+        
+        <!-- Tìm Kiếm Công Việc -->
+        <div class="search-header">
+            <h4>Tìm Kiếm Công Việc</h4>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Tìm công việc...">
+        </div>
+        
+        <!-- Danh Sách Công Việc -->
+        <ul id="todo-list"></ul>
+        
+        <!-- Sắp Xếp Công Việc -->
+        <div class="sort-container">
+            <button id="sort-completed">Sắp xếp hoàn thành</button>
+            <button id="sort-pending">Sắp xếp chưa hoàn thành</button>
+        </div>
+        
+        <!-- Phân Trang -->
+        <div class="pagination-header">
+            <h5>Chuyển Trang</h5>
+        </div>
+        <div class="pagination">
+            <button id="prev-btn">Trước</button>
+            <button id="next-btn">Sau</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
